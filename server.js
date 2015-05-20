@@ -17,8 +17,8 @@ http.createServer(function(req, res){
 	if ( path === "/proc" ) {
 		
 		if ( q.hasOwnProperty("reqs") ) {
-			if ( q.reqs > 50 ) {
-				q.reqs = 50;
+			if ( q.reqs > 250 ) {
+				q.reqs = 250;
 			}
 			pageRequests = pageRequests + parseInt(q.reqs);
 			requestsLastMin = requestsLastMin + parseInt(q.reqs);
